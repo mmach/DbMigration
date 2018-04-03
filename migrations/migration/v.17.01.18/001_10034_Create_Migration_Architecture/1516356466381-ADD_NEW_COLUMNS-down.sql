@@ -1,0 +1,1 @@
+ALTER TABLE dbo.TranscationTable DROP column column_b , column_c ;

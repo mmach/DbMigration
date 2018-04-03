@@ -1,0 +1,28 @@
+{
+   "type": "mssql",
+   "host": "wzd8yexhyi.database.windows.net",
+   "username": "agrippadev",
+   "password": "Atle 2013",
+   "database": "AgrippaProd",
+   "synchronize": true,
+   "logging": true,
+   "entities": [
+      "migrations/entity/**/*.ts"
+   ],
+   "extra":{
+       "options":{
+           "encrypt":true
+       }
+   },
+   "migrations": [
+      "migrations/migration/**/**/*.ts"
+   ],
+   "subscribers": [
+      "migrations/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "build/entity",
+      "migrationsDir": "build/migration",
+      "subscribersDir": "build/subscriber"
+   }
+}
